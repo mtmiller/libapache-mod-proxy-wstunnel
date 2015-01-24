@@ -1,0 +1,2 @@
+.libs/mod_proxy_wstunnel.so usr/lib/apache2/modules
+debian/proxy_wstunnel.load etc/apache2/mods-available

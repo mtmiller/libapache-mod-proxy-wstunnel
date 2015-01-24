@@ -1,0 +1,12 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+override_dh_auto_build:
+	apxs2 -c mod_proxy_wstunnel.c
+
+override_dh_auto_clean:
+	dh_auto_clean
+	rm -f *.la *.lo *.slo
+	rm -rf .libs/

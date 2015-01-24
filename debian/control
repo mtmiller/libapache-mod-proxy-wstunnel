@@ -1,0 +1,15 @@
+Source: libapache-mod-proxy-wstunnel
+Section: web
+Priority: optional
+Maintainer: Mike Miller <mike@mtmxr.com>
+Build-Depends: debhelper (>= 9), apache2-threaded-dev
+Standards-Version: 3.9.5
+
+Package: libapache2-mod-proxy-wstunnel
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: WebSocket tunnel module backported to Apache 2.2
+ mod_proxy_wstunnel is a proxy module to enable proxying of WebSockets
+ using Apache.
+ .
+ This module is backported from Apache version 2.4.
